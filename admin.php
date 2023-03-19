@@ -35,9 +35,6 @@ $result = mysqli_query($conn, $sql);
 </table>
 
 
-
-
-
 <?php
 // Handle the delete user functionality
 if (isset($_POST['delete_user'])) {
