@@ -62,19 +62,6 @@
                     <li style="background-color:#a2acbd;"  class="list-group-item">Reflect Forum Provide you ablity to connect with students </li>
                     <li style="background-color:#a2acbd;" class="list-group-item">Reflect is  a place where you can find solution of your Problem</li>
                     <li style="background-color:#a2acbd;" class="list-group-item">Here you can share idea, consept among thousand's of students </li>
-                    <!-- <li style="background-color:#a2acbd;" class="list-group-item">Remain respectful of other members at all times</li>
-                    <li style="background-color:#a2acbd;" class="list-group-item">Do not offer to pay for help</li> -----> 
-                    <!-- <hr>
-                    <center>
-                    <h3 style = "color:#a2acbd;">Do's</h3>
-                    </center>
-                    <li style="background-color:#a2acbd;"  class="list-group-item">Break up long postings into smaller, easier-to-read paragraphs </li>
-                    <li style="background-color:#a2acbd;"  class="list-group-item">Acknowledge another classmate's point-of-view whether or not you agree. </li>
-
- -->
-
-                
-             
                 </ul>
             </div>
             </div>
