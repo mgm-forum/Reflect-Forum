@@ -20,12 +20,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
             if ($result) {
                 $showAlert = true;
-                header("Location: /forum/index.php?signupsuccess=true");
+                header("Location: /Reflect-Forum/index.php?signupsuccess=true");
                 exit();
             }
         } else {
             $showError = "Passwords do not match";
         }
     }
-    header("Location: /forum/index.php?signupsuccess=false&error=$showError");
+    header("Location: /Reflect-Forum/index.php?signupsuccess=false&error=$showError");
 }
