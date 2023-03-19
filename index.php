@@ -37,15 +37,7 @@
       </div>';
     }
     ?>
-    <!-- <div id = "main" style="color:blue;">
-      <center>
-        <img src="res\gpp.png" alt="..." >
-        <h2>GOVERMENT POLYTECNIC PEN</h2>
-        <h4 style="color:red;">Aprooved by AICTE, New Delhi, Recognized by Goverment of India and </h4>
-        <h4 style="color:red;">Affilated to Mharashtra State Board of Technical Education, Mubai</h4>
-      </center>
-    </div>
-    -->
+   
 <div id="carouselExampleControls" class="carousel slide my-2 mb-2 mx-3 "  data-bs-ride="carousel" >
   
   <div class="carousel-inner">
@@ -86,20 +78,6 @@
     </div>
 
 
-    <!-- Trending -->
-    <!-- Welcome to goverment pen -->
-    <!-- <div class="container-fluid rounded"> -->
-        <!-- <div class=" " style="background-color: #2A0944;">
-            <h2 class="text-center my-4" style="font-family: 'Kanit', sans-serif; color:white">Welcome to Reflect Forum</h2>
-        </div> -->
-        <!-- <div class="container-fluid rounded text-center">
-        <h1 style = "font-family: Arial, Helvetica, sans-serif;"><span class=" font-monospace fw-bold placeholder-glow" style="color:#1a2436 ">
-                        Welcome To Reflect 
-                    </span> </h1>
-                    <img  src="./res/logo4.png" width="100" height="100" alt="">
-        </div> -->
-
-
         <div class="row my-2 row-cols-1 row-cols-md-4 g-4 mx-4 align-items-center justify-content-center rounded  " style="border-radius: 5px; background-color: #25334d;" >
       
           
@@ -127,7 +105,6 @@
                         </div>
                         <div class="card-footer">
                              <a href="threadslist.php?catid=' . $catID . '" class="btn btn-primary rounded-pill " style="width:100%">Click Here</a>
-                            
                         </div>
                     </div>
             </div>';
@@ -139,17 +116,10 @@
     </div>
     </div>
 
-
-
-
-
-
     <?php include './partials/_footer.php' ?>
     <!-- Optional JavaScript; choose one of the two! -->
-
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-
     <!-- Option 2: Separate Popper and Bootstrap JS -->
     <!--
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
