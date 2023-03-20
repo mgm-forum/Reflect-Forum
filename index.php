@@ -39,17 +39,19 @@
     ?>
    
 <div id="carouselExampleControls" class="carousel slide my-2 mb-2 mx-3 "  data-bs-ride="carousel" >
-  
   <div class="carousel-inner">
-    <div class="carousel-item active">
-    <img src="https://source.unsplash.com/1600x400/?coding, codeing" class="d-block w-100" alt="..." style="border-radius: 5%;">
+    <div class="carousel-item active" style="position: relative; display: inline-block;">
+    <img src="https://source.unsplash.com/1600x700/?coding, chat" alt="..." class="d-block w-100" style="width:100%">
+    <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 40px; color: white; text-align: center; font-weight: 600; border: 3px solid black; text-shadow: 4px 4px 8px #000000; padding: 10px;">Welcome To Reflect Forum</div>
     </div>
+
     <div class="carousel-item">
-    <img src="https://source.unsplash.com/1600x400/?discussion, helping" class="d-block w-100" alt="..." style="border-radius: 5%;">
+    <div class="carousel-item active" style="position: relative; display: inline-block;">
+    <img src="https://source.unsplash.com/1600x700/?coding, forum" alt="..." class="d-block w-100" style="width:100%;">
+    <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 40px; color: white; text-align: center; font-weight: 600; border: 3px solid black; text-shadow: 4px 4px 8px #000000; padding: 10px;">A Reflect is a platform where you can find a reflection of yor problem</div>
     </div>
-    <div class="carousel-item">
-    <img src="https://source.unsplash.com/1600x400/?discussion, code" class="d-block w-100" alt="..." style="border-radius: 5%;">
     </div>
+
   </div>
   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
