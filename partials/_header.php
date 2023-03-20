@@ -3,7 +3,6 @@ session_start();
 include 'partials/_loginmodal.php';
 include 'partials/_signmodal.php';
 
-
 echo '<nav class="navbar navbar-expand-lg navbar-dark " style="background-color: #1a2436;">
     <div class="container-fluid">
         <a class="navbar-brand" href="#">
@@ -50,9 +49,11 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
                  
                   </form>
                   <button class="btn btn-outline-warning me-2" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
-                  <button class="btn btn-outline-warning me-2" data-bs-toggle="modal" data-bs-target="#signModal">Register</button>';
+                  <button class="btn btn-outline-warning me-2" data-bs-toggle="modal" data-bs-target="#signModal">Register</button>
+                  <button class="btn btn-outline-warning me-2" data-bs-toggle="modal" data-bs-target="#loginModal">Admin</button>
+                  ';
+                  
 }
-
 echo '</div>
     </div>
 </nav>';
