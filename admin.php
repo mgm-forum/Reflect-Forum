@@ -78,19 +78,19 @@ float: right; }
 <div class="grid-container" >
 
   <div class="grid-item">
-    <p style="color: #036bfc; font-size: 40px; text-align: center;"> Users<br> <?php include './partials/_totalUser.php' ?></p>
+    <p style="color: #036bfc; font-size: 40px; text-align: center;">&#9787;<br>Users<br> <?php include './partials/_totalUser.php' ?></p>
   </div>
   
   <div class="grid-item">
-  <p style="color: #036bfc; font-size: 40px; text-align: center;"> Threads<Br> <?php include './partials/_totalThread.php' ?></p>
+  <p style="color: #036bfc; font-size: 40px; text-align: center;"> &#9777;<br> Threads<Br> <?php include './partials/_totalThread.php' ?></p>
   </div>
 
   <div class="grid-item">
-  <p style="color: #036bfc; font-size: 40px; text-align: center;"> Comments<br> <?php include './partials/_totalComments.php'?></p>
+  <p style="color: #036bfc; font-size: 40px; text-align: center;"> &#9870; <br>Comments<br> <?php include './partials/_totalComments.php'?></p>
   </div>
 
   <div class="grid-item">
-  <p style="color: #036bfc; font-size: 40px; text-align: center;"> Teachers<br> <?php include './partials/_totalTeachers.php'?></p>
+  <p style="color: #036bfc; font-size: 40px; text-align: center;"> &#9751;<br> Teachers<br> <?php include './partials/_totalTeachers.php'?></p>
   </div>
 
 </div>
