@@ -32,7 +32,7 @@ float: right; }
 
 <!-- Left Class -->
 <div class="left"> 
-<table style="border-collapse: collapse; width: 100%; max-width: 800px; margin: 0 auto; border: 1px solid #1a2436;">
+<table style="border-collapse: collapse; width: 100%; max-width: 800px; margin: 0 auto; border: 1px solid #1a2436;  background-color: #d3e0f2;">
     <thead>
         <tr>
             <th style="padding: 12px 15px; text-align: left; background-color: #f2f2f2; border-bottom: 1px solid #ddd;">Name</th>
@@ -66,7 +66,7 @@ float: right; }
 }
 
 .grid-item { 
-  background-color: white;
+  background-color: #d3e0f2;
   border: 1px solid #1a2436;
   border-radius: 20px;
   padding: 10px;
@@ -78,7 +78,7 @@ float: right; }
 <div class="grid-container" >
 
   <div class="grid-item">
-    <p style="color: #036bfc; font-size: 40px; text-align: center; margin-bottom:30px"> Users<br> <?php include './partials/_totalUser.php' ?></p>
+    <p style="color: #036bfc; font-size: 40px; text-align: center;"> Users<br> <?php include './partials/_totalUser.php' ?></p>
   </div>
   
   <div class="grid-item">
