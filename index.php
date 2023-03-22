@@ -18,10 +18,8 @@
     <title>Reflect Forum</title>
 </head>
 
+
 <body>
-
-
-
     <?php include './partials/_header.php' ?>
     <?php include './partials/_dbconnect.php' ?>
     <?php
@@ -123,7 +121,7 @@
             <div class="card" style="width: 18rem;">
                 <img src="https://img.freepik.com/free-photo/pretty-smiling-joyfully-female-with-fair-hair-dressed-casually-looking-with-satisfaction_176420-15187.jpg?w=2000" class="card-img-top" alt="...">
                 <div class="card-body">
-                <p class="card-text"><h4 style = "margin-top:30px">Arya Singasane</h4><br>I really appreciate the user-friendly interface of this forum website. It's easy to navigate and find the information I'm looking for.</p>
+                <p class="card-text"><h4 style = "margin-top:30px">Arya Singasane</h4><br>I really appreciate the user-friendly interface of this forum website. It's easy to navigate and find the information I'm looking for. <br>  &#9734;  &#9734; &#9734; &#9734; &#9734;</p>
                 </div>
             </div>
             </div>
@@ -133,7 +131,7 @@
             <div class="card" style="width: 18rem;">
                 <img src="https://img.freepik.com/free-photo/photo-handsome-unshaven-guy-looks-with-pleasant-expression-directly-camera_176532-8164.jpg?w=2000" class="card-img-top" alt="...">
                 <div class="card-body">
-                <p class="card-text"> <h4> Harshal Tupe </h4> I love the active community on this forum website. It's great to be able to connect with like-minded people and share ideas.</p>
+                <p class="card-text"> <h4> Harshal Tupe </h4> I love the active community on this forum website. It's great to be able to connect with like-minded people and share ideas. <br>  &#9734;  &#9734; &#9734; &#9734; &#9734;</p>
                 </div>
             </div>
             </div>
@@ -143,8 +141,10 @@
             <div class="card" style="width: 18rem;">
                 <img src="https://www.shutterstock.com/image-photo/handsome-unshaven-young-darkskinned-male-260nw-640011838.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
-                <p class="card-text"> <h4> Ayush Shane </h4>  I appreciate that this forum website is well-moderated and doesn't tolerate any hateful or discriminatory language.</p>
+                <p class="card-text"> <h4> Ayush Shane </h4>  I appreciate that this forum website is well-moderated and doesn't tolerate any hateful or discriminatory language.<br>  &#9734;  &#9734; &#9734; &#9734; &#9734;</p>
                 </div>
+                
+                <!-- Starts go here -->
             </div>
             </div>
         </div>
