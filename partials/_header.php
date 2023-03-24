@@ -1,7 +1,10 @@
 <?php
 session_start();
+include 'partials/_dbconnect.php';
 include 'partials/_loginmodal.php';
 include 'partials/_signmodal.php';
+// include './_loginmodal.php';
+// include './_signmodal.php';
 
 echo '<nav class="navbar navbar-expand-lg navbar-dark " style="background-color: #1a2436;">
     <div class="container-fluid">
