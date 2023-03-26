@@ -3,8 +3,8 @@ session_start();
 include 'partials/_dbconnect.php';
 include 'partials/_loginmodal.php';
 include 'partials/_signmodal.php';
-// include './_loginmodal.php';
-// include './_signmodal.php';
+include 'partials/_teacherLogin.php';
+
 
 echo '<nav class="navbar navbar-expand-lg navbar-dark " style="background-color: #1a2436;">
     <div class="container-fluid">
@@ -26,14 +26,8 @@ echo '<nav class="navbar navbar-expand-lg navbar-dark " style="background-color:
                         About
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="https://www.gppen.ac.in/about">About the Intitute</a></li>
-                        <li><a class="dropdown-item" href="https://www.gppen.ac.in/principal_desk">Principle Desk</a></li>
-                        <li><a class="dropdown-item" href="https://www.gppen.ac.in/localCom">Local Management Committee</a></li>
-                       
-                        <li>
-                            <hr class="dropdown-divider">
-                        </li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#exampleModal">Teacher Login</a></li>
+                        <li><a class="dropdown-item" href="https://www.gppen.ac.in/principal_desk">Alumni Login</a></li>
                     </ul>
                 </li>
                 <li class="nav-item">
