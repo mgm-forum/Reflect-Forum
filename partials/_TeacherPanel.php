@@ -17,7 +17,7 @@
       <body>
         <div class="row m-3">
                 <?php 
-                include './_dbconnect.php';
+                include 'partials/_dbconnect.php';
                 $sql = "SELECT * FROM `teachers`";
                 $result = mysqli_query($conn, $sql);
                 while($row = mysqli_fetch_assoc($result)){
