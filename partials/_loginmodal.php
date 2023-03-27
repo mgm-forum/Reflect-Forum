@@ -23,7 +23,6 @@
                     <button type="button" class="btn btn-primary" data-bs-toggle="button">Forgot Password</button>
 
                     <p style = "color:red">Note That: *Strict action will be taken against you if you do anything wrong</p>
-                </form>
 
             </div>
             <div class="modal-footer">
