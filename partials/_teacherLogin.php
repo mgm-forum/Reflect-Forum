@@ -1,81 +1,115 @@
-
 <!-- Modal -->
-<form  action=" " method="post">
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h1 class="modal-title fs-5" id="exampleModalLabel">Teacher Login</h1>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <div class="mb-3">
-        <label for="exampleFormControlInput1" class="form-label" name="name">Name</label>
-        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Your Name Here.">
+<form action="" method="post">
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Teacher Login</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
-
-        <div class="mb-3">
-        <label for="exampleFormControlInput1" class="form-label" name="contact">Contact No.</label>
-        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="+91 9370946170">
+        <div class="modal-body">
+          <div class="mb-3">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" class="form-control" id="name" name="name" placeholder="Your Name Here.">
+          </div>
+          <div class="mb-3">
+            <label for="contact" class="form-label">Contact No.</label>
+            <input type="text" class="form-control" id="contact" name="contact" placeholder="+91 9370946170">
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="email" name="email" placeholder="name@example.com">
+          </div>
+          <div class="mb-3">
+            <label for="branch" class="form-label">Branch</label>
+            <input type="text" class="form-control" id="branch" name="branch" placeholder="Computer, Mechanical, Civil..">
+          </div>
+          <div class="mb-3">
+            <label for="password" class="form-label">Password</label>
+            <input type="password" class="form-control" id="password" name="password" placeholder="Password">
+          </div>
+          <div class="mb-3">
+            <label for="repassword" class="form-label">Re-enter Password</label>
+            <input type="password" class="form-control" id="repassword" name="repassword" placeholder="Re-enter Password">
+          </div>
         </div>
-
-        <div class="mb-3">
-        <label for="exampleFormControlInput1" class="form-label" name="email">Email address</label>
-        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="submit" class="btn btn-primary" name="submit">Save changes</button>
         </div>
-        
-        <div class="mb-3">
-        <label for="exampleFormControlInput1" class="form-label" name="branch">Branch</label>
-        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Computer, Mechanical, Civil..">
-        </div>
-
-        <div class="mb-3">
-        <label for="exampleFormControlInput1" class="form-label" name="password">Password</label>
-        <input type="password" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-        </div>
-
-        <div class="mb-3">
-        <label for="exampleFormControlInput1" class="form-label" name = "repassword">Re-enter Password</label>
-        <input type="password" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-        </div>
-
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button class="btn btn-primary" type="submit" value="submit" name="submit">Save changes</button>
       </div>
     </div>
   </div>
-</div>
 </form>
 
-<?php 
-include "partials/_dbconnect.php"; 
-if(isset($_POST['submit'])){
-    $name = $_POST['name'];
-    $contact = $_POST['contact'];
-    $email = $_POST['email'];
-    $branch = $_POST['branch'];
-    $password = $POST['password'];
-    $repassword = $POST['repassword'];
-    $sql = "INSERT INTO `teachers`(`id`, `fullname`, `phoneno`, `email`, `passwd`, `branch`, `loggedin`, `dt`) VALUES ('','$name','$contact','$email','$password','$branch','0','')";
-    if(mysqli_query($conn, $sql)){
-        echo"<script>alert('New data added successfully')</script>";
-    }
-    else
-    {
-        echo "<script>alert('error')</script>";
-    }
-    mysqli_close($conn);
-}
-else
-{
-  $name = "";
-  $contact = "";
-  $email = "";
-  $branch = "";
-  $password = "";
-  $repassword = "";
-}
 
+<?php
+// $showError = "false";
+// if ($_SERVER["REQUEST_METHOD"] == "POST") {
+//     include '_dbconnect.php';
+//         $name = $_POST['name'];
+//         $contact = $_POST['contact'];
+//         $email = $_POST['email'];
+//         $branch = $_POST['branch'];
+//         $password = $_POST['password'];
+//         $repassword = $_POST['repassword'];
+
+//     // Check whether this email exists
+//     $existSql = "select * from `users` where email = '$email'";
+//     $result = mysqli_query($conn, $existSql);
+//     $numRows = mysqli_num_rows($result);
+//     if ($numRows > 0) {
+//         $showError = "Email already in use";
+//     } else {
+//         if ($password == $repassword) {
+//             $hash = password_hash($pass, PASSWORD_DEFAULT);
+//             $sql = "INSERT INTO `teachers`(`id`, `fullname`, `phoneno`, `email`, `passwd`, `branch`, `loggedin`, `dt`) VALUES ('','$name','$contact','$email','$password','$branch',0,current_timestamp())";
+//             $result = mysqli_query($conn, $sql);
+
+//             if ($result) {
+//                 $showAlert = true;
+//                 header("Location: /Reflect-Forum/index.php?signupsuccess=true");
+//                 exit();
+//             }
+//         } else {
+//             $showError = "Passwords do not match";
+//         }
+//     }
+//     header("Location: /Reflect-Forum/index.php?signupsuccess=false&error=$showError");
+// }
 ?>
+
+<?php
+$showError = "false";
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    include '_dbconnect.php';
+    $name = isset($_POST['name']) ? $_POST['name'] : '';
+    $contact = isset($_POST['contact']) ? $_POST['contact'] : '';
+    $email = isset($_POST['email']) ? $_POST['email'] : '';
+    $branch = isset($_POST['branch']) ? $_POST['branch'] : '';
+    $password = isset($_POST['password']) ? $_POST['password'] : '';
+    $repassword = isset($_POST['repassword']) ? $_POST['repassword'] : '';
+
+    // Check whether this email exists
+    $existSql = "select * from `teachers` where email = '$email'";
+    $result = mysqli_query($conn, $existSql);
+    $numRows = mysqli_num_rows($result);
+    if ($numRows > 0) {
+        $showError = "Email already in use";
+        // echo"<script>alert('Email already in use')</script>";
+    } else {
+        if ($password == $repassword) {
+            $hash = password_hash($password, PASSWORD_DEFAULT);
+            $sql = "INSERT INTO `teachers`(`id`, `fullname`, `phoneno`, `email`, `passwd`, `branch`, `loggedin`, `dt`) VALUES ('','$name','$contact','$email','$hash','$branch',0,current_timestamp())";
+            $result = mysqli_query($conn, $sql);
+            if ($result) {
+                $showAlert = true;
+                ob_start();
+                ob_end_flush();
+                exit();
+            }
+        } else {
+            $showError = "Passwords do not match";
+        }
+    }
+}
