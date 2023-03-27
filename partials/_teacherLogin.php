@@ -96,7 +96,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $numRows = mysqli_num_rows($result);
     if ($numRows > 0) {
         $showError = "Email already in use";
-        // echo"<script>alert('Email already in use')</script>";
     } else {
         if ($password == $repassword) {
             $hash = password_hash($password, PASSWORD_DEFAULT);
