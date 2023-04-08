@@ -29,12 +29,11 @@
     $catTitle = $row['category_title'];
     ?>
 
-    <?php
+<?php
     if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $problem_title = $_POST['problem_title'];
         $problem_desc = $_POST['problem_desc'];
         $user_id = $_SESSION['sno'];
-
         $problem_title = str_replace("<", "&lt;", $problem_title);
         $problem_title = str_replace(">", "&gt;", $problem_title);
         $problem_desc = str_replace("<", "&lt;", $problem_desc);
@@ -47,7 +46,24 @@
         <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
       </div>';
     }
-    ?>
+
+    // Add functionality for teachers to post comments
+    if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['comment'])) {
+        $comment = $_POST['comment'];
+        $user_id = $_SESSION['sno'];
+
+        $comment = str_replace("<", "&lt;", $comment);
+        $comment = str_replace(">", "&gt;", $comment);
+
+        $sql = "INSERT INTO `comments` (`comment_id`, `comment_content`, `thread_id`, `comment_user_id`, `timestamp`) VALUES (NULL, '$comment', '$thread_id', '$user_id', current_timestamp());";
+        $result = mysqli_query($conn, $sql);
+        echo '<div class="alert alert-success alert-dismissible fade show" role="alert">
+        <strong>Success ! </strong> Your comment has been posted successfully.
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+      </div>';
+    }
+?>
+
 
     <!-- Rules -->
     <div class="container-auto">
