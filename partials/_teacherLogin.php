@@ -42,43 +42,6 @@
   </div>
 </form>
 
-
-<?php
-// $showError = "false";
-// if ($_SERVER["REQUEST_METHOD"] == "POST") {
-//     include '_dbconnect.php';
-//         $name = $_POST['name'];
-//         $contact = $_POST['contact'];
-//         $email = $_POST['email'];
-//         $branch = $_POST['branch'];
-//         $password = $_POST['password'];
-//         $repassword = $_POST['repassword'];
-
-//     // Check whether this email exists
-//     $existSql = "select * from `users` where email = '$email'";
-//     $result = mysqli_query($conn, $existSql);
-//     $numRows = mysqli_num_rows($result);
-//     if ($numRows > 0) {
-//         $showError = "Email already in use";
-//     } else {
-//         if ($password == $repassword) {
-//             $hash = password_hash($pass, PASSWORD_DEFAULT);
-//             $sql = "INSERT INTO `teachers`(`id`, `fullname`, `phoneno`, `email`, `passwd`, `branch`, `loggedin`, `dt`) VALUES ('','$name','$contact','$email','$password','$branch',0,current_timestamp())";
-//             $result = mysqli_query($conn, $sql);
-
-//             if ($result) {
-//                 $showAlert = true;
-//                 header("Location: /Reflect-Forum/index.php?signupsuccess=true");
-//                 exit();
-//             }
-//         } else {
-//             $showError = "Passwords do not match";
-//         }
-//     }
-//     header("Location: /Reflect-Forum/index.php?signupsuccess=false&error=$showError");
-// }
-?>
-
 <?php
 $showError = "false";
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -99,7 +62,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     } else {
         if ($password == $repassword) {
             $hash = password_hash($password, PASSWORD_DEFAULT);
-            $sql = "INSERT INTO `teachers`(`id`, `fullname`, `phoneno`, `email`, `passwd`, `branch`, `loggedin`, `dt`) VALUES ('','$name','$contact','$email','$hash','$branch',0,current_timestamp())";
+            $sql = "INSERT INTO `teachers`(`sno`, `fullname`, `phoneno`, `email`, `passwd`, `branch`, `loggedin`, `dt`) VALUES ('','$name','$contact','$email','$hash','$branch',0,current_timestamp())";
             $result = mysqli_query($conn, $sql);
             if ($result) {
                 $showAlert = true;
