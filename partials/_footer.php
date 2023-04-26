@@ -1,7 +1,7 @@
 <?php
 
 echo ' <!-- Footer -->
-<footer class="text-center text-lg-start text-muted " style="background-color: #1a2436;">
+<footer class="text-center text-lg-start text-muted " style="background-color: rgba(0, 0, 0, 0.05);">
     <!-- Section: Social media -->
     <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
         <!-- Left -->
@@ -44,9 +44,9 @@ echo ' <!-- Footer -->
                 <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
                     <!-- Content -->
                     <h6 class="text-uppercase fw-bold mb-4">
-                    <img src="./res/logo4.png" alt="" width="30" height="24" class="d-inline-block align-text-top me-2"> Reflect Forum
+                    <img src="./res/logo4.png" alt="" width="30" height="24" class="d-inline-block align-text-top me-2" > Reflect Forum
                     </h6>
-                    <p>
+                    <p style="color: ">
                        A Reflect is a platform where you can find a reflection of yor problem
                     </p>
                 </div>
@@ -59,19 +59,19 @@ echo ' <!-- Footer -->
                         Company
                     </h6>
                     <p>
-                        <a href="#" class="text-reset">About</a>
+                        <a href="#" class="text-reset" style="color:#BC8034">About</a>
                     </p>
                     <p>
-                        <a href="#" class="text-reset">Legal</a>
+                        <a href="#" class="text-reset" style="color:#BC8034">Legal</a>
                     </p>
                     <p>
-                        <a href="#" class="text-reset">Work Here</a>
+                        <a href="#" class="text-reset" style="color:#BC8034">Work Here</a>
                     </p>
                     <p>
-                        <a href="#" class="text-reset">Privacy Policy</a>
+                        <a href="#" class="text-reset" style="color:#BC8034">Privacy Policy</a>
                     </p>
                     <p>
-                        <a href="#" class="text-reset">Terms of Service</a>
+                        <a href="#" class="text-reset" style="color:#BC8034">Terms of Service</a>
                     </p>
                 </div>
                 <!-- Grid column -->
