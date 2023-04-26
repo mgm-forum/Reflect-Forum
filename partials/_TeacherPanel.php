@@ -37,5 +37,6 @@
                 }
                 ?>
         </div>
+        </center>
       </body>
       </html>
