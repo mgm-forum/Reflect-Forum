@@ -77,10 +77,7 @@
         </div>
     </div>
 
-
         <div class="row my-2 row-cols-1 row-cols-md-4 g-4 mx-4 align-items-center justify-content-center rounded  " style="border-radius: 5px; background-color:  rgba(0, 0, 0, 0.05);" >
-      
-          
               <!--Fetching data from the categories  -->
             <?php
             $sql = "SELECT * FROM `categories`";
