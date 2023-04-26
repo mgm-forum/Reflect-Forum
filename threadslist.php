@@ -69,15 +69,13 @@
     <div class="container-auto">
         <div class="row">
             <div class="col order-first figure">
-   
-
                 <div class="col order-last m-2 container-md border border-secondary shadow p-2 mb-5 bg-body rounded">
-            <div style="background-color:#25334d; height: 415px;"  >
-                <h4 style="color:#a2acbd" class="text-center fs-3 my-2 style=color:red"s>Why <?php echo $catTitle ?> ? </h4>
+                 <div style="background-color: rgba(0, 0, 0, 0.05); height: 415px;"  >
+                <h4 style="color:#90323D" class="text-center fs-3 my-2 style=color:red"s>Why <?php echo $catTitle ?> ? </h4>
                 <ul class="p-4  list-group">
-                    <li style="background-color:#a2acbd;"  class="list-group-item">Reflect Forum Provide you ablity to connect with students </li>
-                    <li style="background-color:#a2acbd;" class="list-group-item">Reflect is  a place where you can find solution of your Problem</li>
-                    <li style="background-color:#a2acbd;" class="list-group-item">Here you can share idea, consept among thousand's of students </li>
+                    <li style="background-color:#D3D3D3;"  class="list-group-item">Reflect Forum Provide you ablity to connect with students </li>
+                    <li style="background-color:#D3D3D3;" class="list-group-item">Reflect is  a place where you can find solution of your Problem</li>
+                    <li style="background-color:#D3D3D3;" class="list-group-item">Here you can share idea, consept among thousand's of students </li>
                 </ul>
             </div>
             </div>
@@ -85,22 +83,22 @@
 
             </div>
             <div class="col order-last m-2 container-md border border-secondary shadow p-2 mb-5 bg-body rounded">
-            <div style="background-color:#25334d; height: 415px;"  >
-                <h4 style="color:#a2acbd" class="text-center fs-3 my-2 style=color:red"s>Rules for the <?php echo $catTitle ?> </h4>
+            <div style="background-color:rgba(0, 0, 0, 0.05); height: 415px;"  >
+                <h4 style="color:#90323D" class="text-center fs-3 my-2 style=color:red"s>Rules for the <?php echo $catTitle ?> </h4>
                 <ul class="p-4  list-group">
-                    <li style="background-color:#a2acbd;" class="list-group-item">No Spam / Advertising / Self-promote in the forums</li>
-                    <li style="background-color:#a2acbd;" class="list-group-item">Do not post copyright-infringing material</li>
-                    <!-- <li style="background-color:#a2acbd;" class="list-group-item">Do not post “offensive” posts, links or images</li> -->
+                    <li style="background-color:#D3D3D3;" class="list-group-item">No Spam / Advertising / Self-promote in the forums</li>
+                    <li style="background-color:#D3D3D3;" class="list-group-item">Do not post copyright-infringing material</li>
+                    <!-- <li style="background-color:#D3D3D3;" class="list-group-item">Do not post “offensive” posts, links or images</li> -->
 
-                    <li style="background-color:#a2acbd;" class="list-group-item">Remain respectful of other members at all times</li>
-                    <li style="background-color:#a2acbd;" class="list-group-item">Do not offer to pay for help</li>
+                    <li style="background-color:#D3D3D3;" class="list-group-item">Remain respectful of other members at all times</li>
+                    <li style="background-color:#D3D3D3;" class="list-group-item">Do not offer to pay for help</li>
 
                     <hr>
                     <center>
-                    <h3 style = "color:#a2acbd;">Do's</h3>
+                    <h3 style = "color:#D3D3D3;">Do's</h3>
                     </center>
-                    <li style="background-color:#a2acbd;"  class="list-group-item">Break up long postings into smaller, easier-to-read paragraphs </li>
-                    <li style="background-color:#a2acbd;"  class="list-group-item">Acknowledge another classmate's point-of-view whether or not you agree. </li>
+                    <li style="background-color:#D3D3D3;"  class="list-group-item">Break up long postings into smaller, easier-to-read paragraphs </li>
+                    <li style="background-color:#D3D3D3;"  class="list-group-item">Acknowledge another classmate's point-of-view whether or not you agree. </li>
 
                 </ul>
             </div>
@@ -123,7 +121,7 @@
                 <label for="problem_desc" class="form-label">Elaborate the problem</label>
                 <textarea class="form-control" id="problem_desc" name="problem_desc" rows="3"></textarea>
             </div>
-            <button type="submit" class="btn btn-danger">POST</button>
+            <button type="submit" class="btn btn-dark">POST</button>
         </form>
     </div>';
     } else {
@@ -157,11 +155,11 @@
 
 
                         echo ' <div class="card p-2 m-3">
-                    <h5 class="card-header" style="background-color:#a2acbd;" style="color:#05399c;">Posted by ' . $row2['user_email'] . ' : ' . $timestamp . '</h5>
+                    <h5 class="card-header" style="background-color:#D3D3D3;" style="color:#05399c;">Posted by ' . $row2['user_email'] . ' : ' . $timestamp . '</h5>
                     <div class="card-body">
                         <h5 class="card-title">' . $title . '</h5>
                         <p class="card-text">' . substr($desc, 0, 30) . '...</p>
-                        <a href="thread.php?threadid=' . $thread_id . '" class="btn btn-warning" style="color:white;">See Discussions</a>
+                        <a href="thread.php?threadid=' . $thread_id . '" class="btn btn-dark" style="color:white;">See Discussions</a>
                     </div>
                 </div>';
                     }
