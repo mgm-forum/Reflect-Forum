@@ -55,27 +55,27 @@
         <div class="container-main" style="background-color: #f1f1f1;">
         <!-- Left Class -->
             <div class="left" > 
-            <table class="rounded" style="border-collapse: collapse; width: 100%; max-width: 800px; margin: 0 auto; border: 1px solid #1a2436;  background-color: #d3e0f2;">
+            <table class="rounded" style="border-collapse: collapse; width: 100%; max-width: 800px; margin: 0 auto; border: 1px solid #1a2436;  background-color: #dff9ff80;">
                 <thead>
                     <tr>
-                        <th style="padding: 12px 15px; text-align: left; background-color: #f2f2f2; border-bottom: 1px solid #ddd;">Name</th>
-                        <th style="padding: 12px 15px; text-align: left; background-color: #f2f2f2; border-bottom: 1px solid #ddd;">Email</th>
-                        <th style="padding: 12px 15px; text-align: left; background-color: #f2f2f2; border-bottom: 1px solid #ddd;">Action</th>
+                        <th style="padding: 12px 15px; text-align: left; background-color: #B0B4BF; border-bottom: 1px solid #ddd;">Sr no.</th>
+                        <th style="padding: 12px 15px; text-align: left; background-color: #B0B4BF; border-bottom: 1px solid #ddd;">Email</th>
+                        <th style="padding: 12px 15px; text-align: left; background-color: #B0B4BF; border-bottom: 1px solid #ddd;">Action</th>
                     </tr>
                 </thead>
                 <tbody>
-                    <?php while ($row = mysqli_fetch_assoc($result)) { ?>
+                    <?php $srno=1; while ($row = mysqli_fetch_assoc($result)) { ?>
                         <tr>
-                            <td style="padding: 12px 15px; border-bottom: 1px solid #ddd; " ><?php echo $row['sno']; ?></td>
+                            <td style="padding: 12px 15px; border-bottom: 1px solid #ddd; " ><?php echo $srno; ?></td>
                             <td style="padding: 12px 15px; border-bottom: 1px solid #ddd;"><?php echo $row['user_email']; ?></td>
                             <td style="padding: 12px 15px; border-bottom: 1px solid #ddd;">
                                 <form action="" method="POST">
-                                    <input type="hidden" name="user_id" value="<?php echo $row['sno']; ?>">
-                                    <button type="submit" name="delete_user" style="background-color: #036bfc; color: #fff; border: none; padding: 8px 12px; border-radius: 4px; cursor: pointer;">Delete</button>
+                                    <input type="hidden" name="user_id" value="<?php //echo $row['sno']; ?>">
+                                    <button type="submit" name="delete_user" style="background-color: #BB3737; color: #fff; border: none; padding: 8px 12px; border-radius: 4px; cursor: pointer;">Delete</button>
                                 </form>
                             </td>
                         </tr>
-                    <?php } ?>
+                    <?php $srno+=1;} ?>
                 </tbody>
             </table>
             </div>
@@ -90,7 +90,7 @@
             }
 
             .grid-item { 
-            background-color: #d3e0f2;
+            background-color: #dff9ff80;
             border: 1px solid #1a2436;
             border-radius: 20px;
             padding: 10px;
@@ -102,26 +102,26 @@
             <div class="grid-container" >
 
             <div class="grid-item">
-                <p style="color: #036bfc; font-size: 40px; text-align: center;">&#9787;<br>Users<br> <?php include './partials/_totalUser.php' ?></p>
+                <p style="color: #002855; font-size: 40px; text-align: center;">&#9787;<br>Users<br> <?php include './partials/_totalUser.php' ?></p>
             </div>
             
             <div class="grid-item">
-            <p style="color: #036bfc; font-size: 40px; text-align: center;"> &#9777;<br> Threads<Br> <?php include './partials/_totalThread.php' ?></p>
+            <p style="color: #002855; font-size: 40px; text-align: center;"> &#9777;<br> Threads<Br> <?php include './partials/_totalThread.php' ?></p>
             </div>
 
             <div class="grid-item">
-            <p style="color: #036bfc; font-size: 40px; text-align: center;"> &#9870; <br>Comments<br> <?php include './partials/_totalComments.php'?></p>
+            <p style="color: #002855; font-size: 40px; text-align: center;"> &#9870; <br>Comments<br> <?php include './partials/_totalComments.php'?></p>
             </div>
 
             <div class="grid-item">
-            <p style="color: #036bfc; font-size: 40px; text-align: center;"> &#9751;<br> Teachers<br> 
+            <p style="color: #002855; font-size: 40px; text-align: center;"> &#9751;<br> Teachers<br> 
             <?php include './partials/_totalTeachers.php'?>
 
            </p>
                 <?php
                 $filename = "_TeacherPanel";
                 function redirect($filename) 
-                {echo "<button onclick=\"window.location.href='$filename.php'\">Click me</button>";}
+                {echo "<button onclick=\"window.location.href='$filename.php'\" style='border-radius: 12px;'>View</button>";}
                 redirect("partials/_TeacherPanel");
                 ?>
             </div>

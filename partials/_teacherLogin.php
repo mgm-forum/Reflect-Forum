@@ -4,38 +4,38 @@
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
-          <h1 class="modal-title fs-5" id="exampleModalLabel">Teacher Login</h1>
+          <h1 class="modal-title fs-5" id="exampleModalLabel" style="color: #001845">Teacher Login</h1>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
           <div class="mb-3">
-            <label for="name" class="form-label">Name</label>
+            <label for="name" class="form-label" style="color: #002855">Name:</label>
             <input type="text" class="form-control" id="name" name="name" placeholder="Your Name Here.">
           </div>
           <div class="mb-3">
-            <label for="contact" class="form-label">Contact No.</label>
+            <label for="contact" class="form-label" style="color: #002855">Contact No.:</label>
             <input type="text" class="form-control" id="contact" name="contact" placeholder="+91 9370946170">
           </div>
           <div class="mb-3">
-            <label for="email" class="form-label">Email address</label>
+            <label for="email" class="form-label" style="color: #002855">Email address:</label>
             <input type="email" class="form-control" id="email" name="email" placeholder="name@example.com">
           </div>
           <div class="mb-3">
-            <label for="branch" class="form-label">Branch</label>
+            <label for="branch" class="form-label" style="color: #002855">Branch:</label>
             <input type="text" class="form-control" id="branch" name="branch" placeholder="Computer, Mechanical, Civil..">
           </div>
           <div class="mb-3">
-            <label for="password" class="form-label">Password</label>
+            <label for="password" class="form-label" style="color: #002855">Password:</label>
             <input type="password" class="form-control" id="password" name="password" placeholder="Password">
           </div>
           <div class="mb-3">
-            <label for="repassword" class="form-label">Re-enter Password</label>
+            <label for="repassword" class="form-label" style="color: #002855">Re-enter Password:</label>
             <input type="password" class="form-control" id="repassword" name="repassword" placeholder="Re-enter Password">
           </div>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
           <button type="submit" class="btn btn-primary" name="submit">Save changes</button>
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
         </div>
       </div>
     </div>

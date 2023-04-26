@@ -65,7 +65,7 @@
 
         <div class="row align-items-center">
             <div class="col">
-                <h1 class="display-5">Welcome to the online discussion forum for <span class=" font-monospace fw-bold placeholder-glow" style="color:#BC8034 ">
+                <h1 class="display-5">Welcome to the online discussion forum for <span class=" font-monospace fw-bold placeholder-glow" style="color:#023E7D ">
                         Techies & Coders 
                     </span>
                 </h1>
@@ -101,10 +101,10 @@
                         <img src=' . $catImg . ' class="card-img-top img-thumbnail" style="height:250px; width:auto;" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">' . $catTitle . '</h5>
-                            <p class="card-text">' . substr($catDesc, 0, 45) . '...</p>  
+                            <p class="card-text">' . substr($catDesc, 0, 62) . '...</p>  
                         </div>
                         <div class="card-footer">
-                             <a href="threadslist.php?catid=' . $catID . '" class="btn btn-dark rounded-pill " style="width:100% ">Click Here</a>
+                             <a href="threadslist.php?catid=' . $catID . '" class="btn btn-dark rounded-pill " style="width:100%; background-color: #023E7D ">Click Here</a>
                         </div>
                     </div>
             </div>';
@@ -121,7 +121,7 @@
             <div class="card" style="width: 18rem;">
                 <img src="https://img.freepik.com/free-photo/pretty-smiling-joyfully-female-with-fair-hair-dressed-casually-looking-with-satisfaction_176420-15187.jpg?w=2000" class="card-img-top" alt="...">
                 <div class="card-body">
-                <p class="card-text"><h4 style = "margin-top:30px">Arya Singasane</h4><br>I really appreciate the user-friendly interface of this forum website. It's easy to navigate and find the information I'm looking for. <br>  &#9734;  &#9734; &#9734; &#9734; &#9734;</p>
+                <p class="card-text"><h4>Arya Singasane</h4>I really appreciate the user-friendly interface of this forum website. It's easy to navigate and find the information I'm looking for. <br>  &#9734;  &#9734; &#9734; &#9734; &#9734;</p>
                 </div>
             </div>
             </div>

@@ -13,8 +13,10 @@
             <!-- Custom css -->
             <link rel="stylesheet" href="./styles/indexPage.css">
             <title>Reflect Forum</title>
-        </head>
-      <body>
+          </head>
+        <body>
+        <br><center>
+        <h2>Teacher Details <br><br> </h2></center>
         <div class="row m-3">
                 <?php 
                 include './_dbconnect.php';
@@ -25,7 +27,7 @@
                     $email = $row['email'];
                     $dept = $row['branch'];
                     $contact = $row['phoneno'];
-                    echo '<div class="card" style="width: 18rem; mt-3">
+                    echo '<div class="card" style="width: 20rem; m-3; background-color:#EBF2FF">
                     <div class="card-body">
                       <h5 class="card-title">'.$name.'</h5>
                       <h6 class="card-subtitle mb-2 text-body-secondary">'.$email.' <br> '.$dept.'<br></h6>
