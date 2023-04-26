@@ -6,7 +6,7 @@ include 'partials/_signmodal.php';
 include 'partials/_teacherLogin.php';
 
 
-echo '<nav class="navbar navbar-expand-lg navbar-dark " style="background-color: #1a2436;">
+echo '<nav class="navbar navbar-expand-lg navbar-dark " style="background-color: #161A1D">
     <div class="container-fluid">
         <a class="navbar-brand" href="#">
             <img src="./res/logo4.png" alt="" width="30" height="24" class="d-inline-block align-text-top">
