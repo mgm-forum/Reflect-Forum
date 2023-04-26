@@ -67,7 +67,7 @@
                 <label for="comment" class="form-label">Enter your comment </label>
                 <textarea class="form-control" id="comment" name="comment" rows="4"></textarea>
             </div>
-            <button type="submit" class="btn btn-danger">POST COMMENT</button>
+            <button type="submit" class="btn btn-dark">POST COMMENT</button>
         </form>
     </div>';
     } else {
