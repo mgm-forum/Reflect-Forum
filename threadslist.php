@@ -1,6 +1,5 @@
 <!doctype html>
 <html lang="en">
-
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -16,9 +15,7 @@
     <link rel="stylesheet" href="./styles/indexPage.css">
     <title>Reflect Forum</title>
 </head>
-
 <body>
-
     <?php include './partials/_header.php' ?>
     <?php include './partials/_dbconnect.php' ?>
     <?php
@@ -28,7 +25,6 @@
     $row = mysqli_fetch_assoc($result);
     $catTitle = $row['category_title'];
     ?>
-
 <?php
     if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $problem_title = $_POST['problem_title'];
@@ -128,7 +124,7 @@
         echo '<div style="color:#05399c;" class="text-center link-warning fs-4" >Please log in to ask questions !   </div> </div>';
     }
     ?>
-
+<!-- Main code -->
     <div class="container-fluid">
         <p style="color:#05399c;" class="fs-3 text-center">Browse Questions for <?php echo $catTitle ?></p>
         <div class="container-xl my-2">
@@ -151,9 +147,6 @@
                         $sql2 = "SELECT user_email FROM `users` WHERE sno='$thread_user_id'";
                         $result2 = mysqli_query($conn, $sql2);
                         $row2 = mysqli_fetch_assoc($result2);
-
-
-
                         echo ' <div class="card p-2 m-3">
                     <h5 class="card-header" style="background-color:#D3D3D3;" style="color:#05399c;">Posted by ' . $row2['user_email'] . ' : ' . $timestamp . '</h5>
                     <div class="card-body">
@@ -167,7 +160,6 @@
                 ?>
             </div>
         </div>
-
     </div>
 
 
