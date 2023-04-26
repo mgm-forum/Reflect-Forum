@@ -65,7 +65,7 @@
 
         <div class="row align-items-center">
             <div class="col">
-                <h1 class="display-5">Welcome to the online discussion forum for <span class=" font-monospace fw-bold placeholder-glow" style="color:#1a2436 ">
+                <h1 class="display-5">Welcome to the online discussion forum for <span class=" font-monospace fw-bold placeholder-glow" style="color:#BC8034 ">
                         Techies & Coders 
                     </span>
                 </h1>
@@ -78,7 +78,7 @@
     </div>
 
 
-        <div class="row my-2 row-cols-1 row-cols-md-4 g-4 mx-4 align-items-center justify-content-center rounded  " style="border-radius: 5px; background-color: #25334d;" >
+        <div class="row my-2 row-cols-1 row-cols-md-4 g-4 mx-4 align-items-center justify-content-center rounded  " style="border-radius: 5px; background-color:  rgba(0, 0, 0, 0.05);" >
       
           
               <!--Fetching data from the categories  -->
@@ -104,7 +104,7 @@
                             <p class="card-text">' . substr($catDesc, 0, 45) . '...</p>  
                         </div>
                         <div class="card-footer">
-                             <a href="threadslist.php?catid=' . $catID . '" class="btn btn-primary rounded-pill " style="width:100%">Click Here</a>
+                             <a href="threadslist.php?catid=' . $catID . '" class="btn btn-dark rounded-pill " style="width:100% ">Click Here</a>
                         </div>
                     </div>
             </div>';
